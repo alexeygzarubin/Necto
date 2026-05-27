@@ -117,4 +117,7 @@ ENV/
 
 # Nexto isolated dependencies
 rlbot-support/Nexto/dependencies/
+dependencies/
+**/dependencies/
+
 
