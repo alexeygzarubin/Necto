@@ -114,3 +114,7 @@ ENV/
 .vscode/
 *.code-workspace
 /src-alt/
+
+# Nexto isolated dependencies
+rlbot-support/Nexto/dependencies/
+

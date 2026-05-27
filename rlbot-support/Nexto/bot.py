@@ -1,3 +1,11 @@
+import os
+import sys
+
+# Strictly isolate third_party dependencies to prevent polluting main project
+deps_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "dependencies")
+if os.path.exists(deps_path):
+    sys.path.insert(0, deps_path)
+
 import numpy as np
 import torch
 from rlbot.agents.base_agent import BaseAgent, SimpleControllerState
